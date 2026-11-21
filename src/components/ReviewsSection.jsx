@@ -33,27 +33,39 @@ export default function ReviewsSection() {
             return
         }
 
-        document.querySelectorAll('.test-card video').forEach((item) => item.pause())
+        document.querySelectorAll('.test-card video').forEach((item) => {
+            item.pause()
+            item.currentTime = 0
+        })
+
         setPlayingIndex(index)
-        video.play()
+        video.muted = false
+        video.controls = true
+        video.play().catch(() => {
+            video.muted = true
+            video.controls = false
+            video.play()
+        })
     }
 
     return (
         <section id="reviews" style={{ background: 'var(--cream-soft)' }}>
             <div className="wrap">
-                <div className="section-head reveal">
+                {/* 1. Yahan add karein: */}
+                <div className="section-head reveal reveal-in">
                     <span className="eyebrow">💬 Student Results</span>
                     <h2>People Are Feeling Better, Naturally</h2>
                     <p style={{ marginTop: '8px', fontSize: '0.9rem', color: '#5c5c4e' }}>
                         Card par tap karke video testimonial play karein.
                     </p>
                 </div>
-                
+
                 <div className="test-grid">
                     {testimonialItems.map((item, index) => (
                         <button
                             type="button"
-                            className={`test-card reveal ${playingIndex === index ? 'is-playing' : ''}`}
+                            
+                            className={`test-card reveal reveal-in ${playingIndex === index ? 'is-playing' : ''}`}
                             key={item.title}
                             style={{ transitionDelay: `${index * 100}ms` }}
                             onClick={(event) => toggleVideo(event, index)}

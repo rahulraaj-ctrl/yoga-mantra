@@ -1,6 +1,13 @@
 import { eveningTimings, morningTimings } from '../data/siteData'
 
 export default function TimingsSection() {
+    const regularMorningTimings = morningTimings.filter((slot) => !slot.value.includes('Female Only'))
+    const regularEveningTimings = eveningTimings.filter((slot) => !slot.value.includes('Female Only'))
+    const femaleTimings = [
+        ...morningTimings.filter((slot) => slot.value.includes('Female Only')),
+        ...eveningTimings.filter((slot) => slot.value.includes('Female Only')),
+    ]
+
     return (
         <section id="timings">
             <div className="wrap">
@@ -12,7 +19,7 @@ export default function TimingsSection() {
                     <div className="timing-card reveal">
                         <h3>🌅 Morning Batches</h3>
                         <div className="slot-list">
-                            {morningTimings.map((slot) => (
+                            {regularMorningTimings.map((slot) => (
                                 <div className="slot" key={slot.label}>
                                     <span>{slot.label}</span>
                                     <b>{slot.value}</b>
@@ -23,13 +30,24 @@ export default function TimingsSection() {
                     <div className="timing-card reveal">
                         <h3>🌆 Evening Batches</h3>
                         <div className="slot-list">
-                            {eveningTimings.map((slot) => (
+                            {regularEveningTimings.map((slot) => (
                                 <div className="slot" key={slot.label}>
                                     <span>{slot.label}</span>
                                     <b>{slot.value}</b>
                                 </div>
                             ))}
                         </div>
+                    </div>
+                </div>
+                <div className="female-timings-section">
+                    <h3>🚺 Female Only Timings</h3>
+                    <div className="slot-list">
+                        {femaleTimings.map((slot) => (
+                            <div className="slot female-slot" key={`${slot.label}-${slot.value}`}>
+                                <span>{slot.label}</span>
+                                <b>{slot.value}</b>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
