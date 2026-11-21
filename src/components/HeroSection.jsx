@@ -1,3 +1,4 @@
+import front2 from "../assets/front2.jpg";
 export default function HeroSection() {
     return (
         <section className="hero" id="home">
@@ -21,10 +22,8 @@ export default function HeroSection() {
 
                 <div className="hero-visual">
                     <div className="breath-wrap">
-                        <img
-                            src="https://media.istockphoto.com/id/599867640/photo/school-kids-meditating-during-yoga-class.jpg?s=612x612&w=0&k=20&c=zxrgvowNFb3KKGEcFE-1zNQULL3xNNUPo4kM5HiTFJU="
-                            alt="Happy students placeholder"
-                        />
+                      
+                        <img src={front2} alt="Happy students placeholder"/>
                         <div className="breath-ring" />
                     </div>
                     <div className="rating-card">

@@ -1,3 +1,4 @@
+import anupma from "../assets/anupma_bhatt.jpeg"
 export default function FounderSection() {
     return (
         <section id="founder" style={{ background: 'var(--cream-soft)' }}>
@@ -8,7 +9,7 @@ export default function FounderSection() {
                 </div>
                 <div className="founder-card reveal">
                     <img
-                        src="https://placehold.co/360x420/2d5016/f4f1e8?text=Replace%3A+Founder+Photo"
+                        src={anupma}
                         alt="Founder photo placeholder"
                     />
                     <div className="founder-body">

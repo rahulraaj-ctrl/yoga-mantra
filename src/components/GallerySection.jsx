@@ -1,4 +1,22 @@
+import glp1 from "../assets/glimpes/glp1.jpeg"
+import glp2 from "../assets/glimpes/glp2.jpeg"
+import glp3 from "../assets/glimpes/glp3.jpeg"
+import glp4 from "../assets/glimpes/glp4.jpeg"
+import glp5 from "../assets/glimpes/glp5.jpeg"
+import glp6 from "../assets/glimpes/glp6.jpeg"
+import glp7 from "../assets/glimpes/glp7.jpeg"
+import glp8 from "../assets/glimpes/glp8.jpeg"
 export default function GallerySection() {
+    const glimpes = [
+        glp1,
+        glp2,
+        glp3,
+        glp4,
+        glp5,
+        glp6,
+        glp7,
+        glp8
+    ]
     return (
         <section>
             <div className="wrap">
@@ -7,12 +25,12 @@ export default function GallerySection() {
                     <h2>Our Studio & Sessions</h2>
                 </div>
                 <div className="gallery-grid">
-                    {Array.from({ length: 8 }).map((_, index) => (
+                    {glimpes.map((_, index) => (
                         <img
                             key={index}
                             className="reveal"
                             style={{ transitionDelay: `${index * 50}ms` }}
-                            src={`https://placehold.co/300x200/${index % 2 === 0 ? '22421c' : '2d5016'}/f7f2e7?text=Photo+${index + 1}`}
+                            src={_}
                             alt={`Gallery photo ${index + 1}`}
                         />
                     ))}

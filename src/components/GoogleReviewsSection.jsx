@@ -1,11 +1,18 @@
+import gr1 from "../assets/googleR/gr1.jpeg"
+import gr2 from "../assets/googleR/gr2.jpeg"
+import gr3 from "../assets/googleR/gr3.jpeg"
+import gr4 from "../assets/googleR/gr4.jpeg"
+import gr5 from "../assets/googleR/gr5.jpeg"
+import gr6 from "../assets/googleR/gr6.jpeg"
+
 export default function GoogleReviewsSection() {
     const reviewShots = [
-        'Paste+Review+Screenshot+1',
-        'Paste+Review+Screenshot+2',
-        'Paste+Review+Screenshot+3',
-        'Paste+Review+Screenshot+4',
-        'Paste+Review+Screenshot+5',
-        'Paste+Review+Screenshot+6',
+        gr1,
+        gr2,
+        gr3,
+        gr4,
+        gr5,
+        gr6
     ]
 
     return (
@@ -37,7 +44,7 @@ export default function GoogleReviewsSection() {
                 <div className="review-shots-grid">
                     {reviewShots.map((item, index) => (
                         <div className="review-shot-card reveal" key={item} style={{ transitionDelay: `${index * 60}ms` }}>
-                            <img src={`https://placehold.co/500x260/ffffff/2a2a22?text=${item}`} alt="Google review screenshot placeholder" />
+                            <img src={item} alt="Google review screenshot placeholder" />
                         </div>
                     ))}
                 </div>

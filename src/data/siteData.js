@@ -1,3 +1,13 @@
+import general from "../assets/general.jpeg"
+import ryt from "../assets/ryt.jpeg"
+import kids from "../assets/kids.jpg"
+import bhagwat from "../assets/bhagwat_geeta.jpg"
+import face from "../assets/face.jpeg"
+import anita from "../assets/anita.jpeg"
+import shubham from "../assets/shubham_verma.jpeg"
+import advance from "../assets/advance.jpeg"
+import shaila from "../assets/shaila.jpeg"
+
 export const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'Programs', href: '#programs' },
@@ -19,7 +29,7 @@ export const whyCards = [
 
 export const programCards = [
   {
-    image: 'https://placehold.co/500x300/2d5016/f4f1e8?text=General+Fitness+Batches',
+    image: general,
     title: '🔥 General Fitness Batches',
     price: '₹1499/Month Offline · ₹999/Month Online',
     feats: ['Asanas, Pranayama & Meditation', 'Monday to Saturday · 1 hour session', 'Included with selective programs'],
@@ -27,7 +37,7 @@ export const programCards = [
     buttonText: 'Book Demo',
   },
   {
-    image: 'https://placehold.co/500x300/3d5a2e/f4f1e8?text=Face+Yoga',
+    image: face,
     title: '✨ Face Yoga',
     price: '₹1999 Offline · ₹1499 Online',
     feats: ['20 sessions', 'Face toning exercises', 'Detox & face glow techniques', 'Diet consultation included'],
@@ -35,7 +45,7 @@ export const programCards = [
     buttonText: 'Book Demo',
   },
   {
-    image: 'https://placehold.co/500x300/4a6b3a/f4f1e8?text=Advance+Yoga+Classes',
+    image: advance,
     title: '🧘 Advance Yoga Classes',
     price: '₹1999',
     feats: ['Deeper asana practice & flexibility', 'Advanced pranayama & breath control', 'Strength & balance building', 'For experienced practitioners'],
@@ -43,7 +53,7 @@ export const programCards = [
     buttonText: 'Book Demo',
   },
   {
-    image: 'https://placehold.co/500x300/2d5016/f4f1e8?text=Kids+Yoga+Batches',
+    image: kids,
     title: '👧 Kids Yoga Batches',
     price: '₹1499/Month Offline',
     feats: ['Fun & interactive sessions', 'Improves focus & flexibility', 'Builds discipline & posture', 'Reduces screen-time dependency'],
@@ -51,7 +61,7 @@ export const programCards = [
     buttonText: 'Book Demo',
   },
   {
-    image: 'https://placehold.co/500x300/3d5a2e/f4f1e8?text=RYT-200%2F300+TTC',
+    image: ryt,
     title: '🎓 RYT-200 / 300 (TTC Batches)',
     price: 'Become a Certified Yoga Teacher',
     feats: ['Internationally recognised certification', 'Hands-on teaching practice', 'Yoga philosophy & anatomy covered'],
@@ -59,7 +69,7 @@ export const programCards = [
     buttonText: 'Enquire Now',
   },
   {
-    image: 'https://placehold.co/500x300/4a6b3a/f4f1e8?text=Shreemad+Bhagwad+Geeta',
+    image: bhagwat,
     title: '📖 Shreemad Bhagwad Geeta Session',
     price: 'Offline & Online',
     feats: ['Life lessons from the Geeta', 'Simple explanation for all ages', 'Weekly discussion sessions'],
@@ -155,10 +165,9 @@ export const specialCourses = [
 ]
 
 export const teamMembers = [
-  { name: 'Shaila Pant', role: "Women's Wellness Expert · Therapy Session", image: 'https://placehold.co/360x360/3d5a2e/f4f1e8?text=Replace%3A+Shaila+Photo' },
-  { name: 'Shubham Verma', role: 'Advance Asanas Expert · Sound Healer, Therapy', image: 'https://placehold.co/360x360/4a6b3a/f4f1e8?text=Replace%3A+Shubham+Photo' },
-  { name: 'Anita Verma', role: "Women's Special Batches · Corporate Yoga Expert", image: 'https://placehold.co/360x360/2d5016/f4f1e8?text=Replace%3A+Anita+Photo' },
-  { name: 'Aman Shukla', role: 'Kids Yoga Batches · Accupressure Expert, PT Classes', image: 'https://placehold.co/360x360/1f6b3a/f4f1e8?text=Replace%3A+Aman+Photo' },
+  { name: 'Shaila Pant', role: "Women's Wellness Expert · Therapy Session", image: shaila },
+  { name: 'Shubham Verma', role: 'Advance Asanas Expert · Sound Healer, Therapy', image: shubham },
+  { name: 'Anita Verma', role: "Women's Special Batches · Corporate Yoga Expert", image: anita },
 ]
 
 export const faqs = [

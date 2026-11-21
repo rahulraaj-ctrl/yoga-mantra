@@ -196,8 +196,8 @@ header {
 .hero {
     padding: 60px 0 70px;
     background:
-        linear-gradient(105deg, rgba(247, 242, 231, 0.96) 0%, rgba(239, 231, 214, 0.9) 44%, rgba(18, 52, 32, 0.56) 100%),
-        url('https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
+        linear-gradient(105deg, rgba(247, 242, 231, 0.72) 0%, rgba(239, 231, 214, 0.56) 38%, rgba(18, 52, 32, 0.28) 100%),
+        url("./assets/hero.jpeg") center/cover no-repeat;
     position: relative;
     overflow: hidden;
 }
@@ -393,7 +393,7 @@ header {
 }
 
 .program-card img {
-    height: 150px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -510,6 +510,7 @@ header {
 }
 
 .price-card.popular {
+    background-color: rgb(225, 233, 114);
     border: 2px solid var(--turmeric);
     box-shadow: var(--shadow);
     transform: translateY(-6px);
@@ -610,6 +611,7 @@ header {
 
 .test-card {
     position: relative;
+    background-color: red;
     border-radius: var(--radius);
     overflow: hidden;
     aspect-ratio: 9 / 16;
@@ -835,7 +837,7 @@ header {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 22px;
     max-width: 100%;
     margin: 0 auto;
@@ -860,8 +862,8 @@ header {
 }
 
 .team-card img {
-    width: 130px;
-    height: 130px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid var(--cream-soft);
