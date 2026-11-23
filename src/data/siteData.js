@@ -19,7 +19,7 @@ export const navItems = [
 ]
 
 export const whyCards = [
-  { icon: '🎓', title: 'Certified Trainers', text: 'PGDYT & specialised certifications.' },
+  { icon: '🎓', title: 'Certified Trainers', text: 'MA Yoga, PG Diploma & Specialised Certification.' },
   { icon: '🤝', title: 'Personal Attention', text: 'Small batches, real guidance.' },
   { icon: '💻', title: 'Online & Offline', text: 'Join from home or our Lucknow studio.' },
   { icon: '👩', title: 'Female Special Batches', text: 'Dedicated batches for women\'s comfort.' },
@@ -33,39 +33,39 @@ export const programCards = [
     title: '🔥 General Fitness Batches',
     price: '₹1499/Month Offline · ₹999/Month Online',
     feats: ['Asanas, Pranayama & Meditation', 'Monday to Saturday · 1 hour session', 'Included with selective programs'],
-    cta: 'https://wa.me/917905569751?text=General%20Fitness%20Batch%20demo%20chahiye',
-    buttonText: 'Book Demo',
+    cta: 'https://wa.me/917905569751?text=Hello%2C%20I%20am%20interested%20in%20the%20General%20Fitness%20Batch.%20Source%3A%20Website',
+    buttonText: 'Schedule Consultation',
   },
   {
     image: face,
     title: '✨ Face Yoga',
     price: '₹1999 Offline · ₹1499 Online',
     feats: ['20 sessions', 'Face toning exercises', 'Detox & face glow techniques', 'Diet consultation included'],
-    cta: 'https://wa.me/917905569751?text=Face%20Yoga%20demo%20chahiye',
-    buttonText: 'Book Demo',
+    cta: 'https://wa.me/917905569751?text=Hello%2C%20I%20am%20interested%20in%20Face%20Yoga.%20Source%3A%20Website',
+    buttonText: 'Schedule Consultation',
   },
   {
     image: advance,
     title: '🧘 Advance Yoga Classes',
     price: '₹1999',
     feats: ['Deeper asana practice & flexibility', 'Advanced pranayama & breath control', 'Strength & balance building', 'For experienced practitioners'],
-    cta: 'https://wa.me/917905569751?text=Advance%20Yoga%20Class%20demo%20chahiye',
-    buttonText: 'Book Demo',
+    cta: 'https://wa.me/917905569751?text=Hello%2C%20I%20am%20interested%20in%20Advance%20Yoga%20Classes.%20Source%3A%20Website',
+    buttonText: 'Schedule Consultation',
   },
   {
     image: kids,
     title: '👧 Kids Yoga Batches',
     price: '₹1499/Month Offline',
     feats: ['Fun & interactive sessions', 'Improves focus & flexibility', 'Builds discipline & posture', 'Reduces screen-time dependency'],
-    cta: 'https://wa.me/917905569751?text=Kids%20Yoga%20Batch%20demo%20chahiye',
-    buttonText: 'Book Demo',
+    cta: 'https://wa.me/917905569751?text=Hello%2C%20I%20am%20interested%20in%20Kids%20Yoga%20Batches.%20Source%3A%20Website',
+    buttonText: 'Schedule Consultation',
   },
   {
     image: ryt,
     title: '🎓 RYT-200 / 300 (TTC Batches)',
     price: 'Become a Certified Yoga Teacher',
     feats: ['Internationally recognised certification', 'Hands-on teaching practice', 'Yoga philosophy & anatomy covered'],
-    cta: 'https://wa.me/917905569751?text=RYT%20200%2F300%20TTC%20ke%20baare%20mein%20jaanna%20hai',
+    cta: 'https://wa.me/917905569751?text=Hello%2C%20I%20want%20details%20about%20RYT-200%2F300%20Teacher%20Training.%20Source%3A%20Website',
     buttonText: 'Enquire Now',
   },
   {
@@ -73,7 +73,7 @@ export const programCards = [
     title: '📖 Shreemad Bhagwad Geeta Session',
     price: 'Offline & Online',
     feats: ['Life lessons from the Geeta', 'Simple explanation for all ages', 'Weekly discussion sessions'],
-    cta: 'https://wa.me/917905569751?text=Bhagwad%20Geeta%20Session%20ke%20baare%20mein%20jaanna%20hai',
+    cta: 'https://wa.me/917905569751?text=Hello%2C%20I%20want%20details%20about%20the%20Bhagavad%20Gita%20Session.%20Source%3A%20Website',
     buttonText: 'Enquire Now',
   },
 ]
@@ -83,24 +83,24 @@ export const featuredProgram = {
   title: '🏠 Yoga At Your Home',
   price: 'Starting ₹4999/Month · Offline across Lucknow',
   feats: ['Trainer visits your home', 'Fully personalised routine', 'Flexible scheduling'],
-  cta: 'https://wa.me/917905569751?text=Yoga%20At%20Home%20demo%20chahiye',
-  buttonText: 'Book Demo',
+  cta: 'https://wa.me/917905569751?text=Hello%2C%20I%20am%20interested%20in%20Yoga%20At%20Home.%20Source%3A%20Website',
+  buttonText: 'Schedule Consultation',
 }
 
 export const morningTimings = [
-  { label: 'Batch 1', value: '6:00 – 7:00 AM' },
-  { label: 'Batch 2', value: '7:00 – 8:00 AM' },
-  { label: 'Batch 3', value: '8:00 – 9:00 AM' },
-  { label: 'Batch 4', value: '9:00 – 10:00 AM' },
-  { label: 'Batch 5', value: '10:00 – 11:00 AM · Female Only Batch' },
+  { label: 'Batch 1', value: '6:00 AM – 7:00 AM' },
+  { label: 'Batch 2', value: '7:00 AM – 8:00 AM' },
+  { label: 'Batch 3', value: '8:00 AM – 9:00 AM' },
+  { label: 'Batch 4', value: '9:00 AM – 10:00 AM' },
+  { label: 'Batch 5', value: '10:00 AM – 11:00 AM · Female Only Batch' },
   { label: 'Batch 6: Advance Classes', value: '11:00 AM – 12:00 PM' },
 ]
 
 export const eveningTimings = [
-  { label: 'Batch 1', value: '4:00 – 5:00 PM' },
-  { label: 'Batch 2', value: '5:00 – 6:00 PM · Female Only Batch' },
-  { label: 'Batch 3', value: '6:00 – 7:00 PM · Female Only Batch' },
-  { label: 'Batch 4', value: '7:00 – 8:00 PM' },
+  { label: 'Batch 1', value: '4:00 PM – 5:00 PM' },
+  { label: 'Batch 2', value: '5:00 PM – 6:00 PM ·  Female Only Batch' },
+  { label: 'Batch 3', value: '6:00 PM – 7:00 PM ·  Female Only Batch' },
+  { label: 'Batch 4', value: '7:00 PM – 8:00 PM' },
 ]
 
 export const pricePlans = [
@@ -110,7 +110,7 @@ export const pricePlans = [
     period: '/month',
     features: ['Group Classes', 'Offline (Studio)', 'Beginner Friendly', 'WhatsApp Support'],
     primary: false,
-    link: 'https://wa.me/917905569751?text=Basic%20Plan%20ke%20baare%20mein%20jaanna%20hai',
+    link: 'https://wa.me/917905569751?text=Hello%2C%20I%20want%20details%20about%20the%20Basic%20Plan.%20Source%3A%20Website',
   },
   {
     name: 'Therapeutic Batches',
@@ -119,15 +119,16 @@ export const pricePlans = [
     features: ['Personal Guidance', 'Diet Support', 'Online + Offline', 'Progress Tracking'],
     primary: true,
     popular: true,
-    link: 'https://wa.me/917905569751?text=Therapeutic%20Batches%20ke%20baare%20mein%20jaanna%20hai',
+    link: 'https://wa.me/917905569751?text=Hello%2C%20I%20want%20details%20about%20Therapeutic%20Batches.%20Source%3A%20Website',
   },
   {
-    name: 'Personal Yoga (Starting At)',
+    name: 'Personal Yoga Training',
+    pricePrefix: 'Starting at',
     price: '₹4999',
     period: '/month',
     features: ['One-to-One Sessions', 'Home Visit / Online', 'Fully Customised Plan', 'Priority Scheduling'],
     primary: false,
-    link: 'https://wa.me/917905569751?text=Personal%20Yoga%20Plan%20ke%20baare%20mein%20jaanna%20hai',
+    link: 'https://wa.me/917905569751?text=Hello%2C%20I%20want%20details%20about%20the%20Personal%20Yoga%20Plan.%20Source%3A%20Website',
   },
 ]
 

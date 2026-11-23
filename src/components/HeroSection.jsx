@@ -13,7 +13,7 @@ export default function HeroSection() {
                     </p>
                     <div className="hero-ctas">
                         <a href="#trial" className="btn btn-primary">🎯 Book Free Demo Class</a>
-                        <a href="https://wa.me/917905569751" className="btn btn-whatsapp">💬 WhatsApp Now</a>
+                        <a href="https://wa.me/917905569751?text=Hello%2C%20I%20am%20contacting%20from%20the%20Yoga%20Mantra%20website.%20Source%3A%20Website%20Hero" className="btn btn-whatsapp">💬 WhatsApp Now</a>
                     </div>
                     <p className="trust-line">
                         ⭐ 4.9/5 Rated · <span>1000+</span> Happy Students · Certified Female & Male Trainers

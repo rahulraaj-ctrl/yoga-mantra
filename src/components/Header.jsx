@@ -18,7 +18,7 @@ export default function Header({ menuOpen, onToggleMenu, onCloseMenu }) {
                 </nav>
 
                 <div className="nav-cta">
-                    <a href="#pricing" className="btn btn-primary small-btn">Book Demo</a>
+                    <a href="#pricing" className="btn btn-primary small-btn">Schedule Consultation</a>
                     <button
                         type="button"
                         className="burger"

@@ -18,6 +18,7 @@ export default function PricingSection() {
                             {plan.popular && <span className="badge">⭐ Most Popular</span>}
                             <h3>{plan.name}</h3>
                             <div className="price-amt">
+                                {plan.pricePrefix && <span className="price-prefix">{plan.pricePrefix} </span>}
                                 {plan.price}
                                 <span>{plan.period}</span>
                             </div>

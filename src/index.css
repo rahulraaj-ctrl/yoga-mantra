@@ -654,13 +654,17 @@ header {
     border-bottom-color: #efc8d6;
 }
 
+.female-timings-section .slot-list {
+    gap: 10px;
+}
+
 .female-timings-section .slot b {
     color: #9b3e63;
 }
 
 .female-slot {
     background: rgba(255, 255, 255, 0.55);
-    margin: 4px 0;
+    margin: 0;
     padding: 12px;
     border-radius: 8px;
 }
@@ -721,6 +725,13 @@ header {
     font-family: 'Fraunces', serif;
     font-size: 2rem;
     color: var(--forest-deep);
+}
+
+.price-amt .price-prefix {
+    font-size: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    color: #6a6a5c;
+    font-weight: 600;
 }
 
 .price-amt span {
@@ -971,8 +982,9 @@ header {
 
 .gallery-grid img {
     width: 100%;
-    height: 160px;
+    height: 220px;
     object-fit: cover;
+    object-position: center 22%;
     border-radius: 10px;
 }
 
@@ -1307,6 +1319,12 @@ footer {
         max-width: 340px;
         margin: 0 auto;
     }
+
+    .gallery-grid img {
+        height: 260px;
+        object-fit: cover;
+        object-position: center 18%;
+    }
 }
 
 @media (max-width: 560px) {
@@ -1318,6 +1336,16 @@ footer {
 
     .pricing-grid {
         grid-template-columns: 1fr;
+    }
+
+    .female-timings-section {
+        padding: 18px;
+    }
+
+    .female-timings-section .slot {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
     }
 }
 

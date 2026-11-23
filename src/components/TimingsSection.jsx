@@ -19,9 +19,9 @@ export default function TimingsSection() {
                     <div className="timing-card reveal">
                         <h3>🌅 Morning Batches</h3>
                         <div className="slot-list">
-                            {regularMorningTimings.map((slot) => (
-                                <div className="slot" key={slot.label}>
-                                    <span>{slot.label}</span>
+                            {regularMorningTimings.map((slot, index) => (
+                                <div className="slot" key={`${slot.value}-${index}`}>
+                                    <span>{`Batch ${index + 1}`}</span>
                                     <b>{slot.value}</b>
                                 </div>
                             ))}
@@ -30,9 +30,9 @@ export default function TimingsSection() {
                     <div className="timing-card reveal">
                         <h3>🌆 Evening Batches</h3>
                         <div className="slot-list">
-                            {regularEveningTimings.map((slot) => (
-                                <div className="slot" key={slot.label}>
-                                    <span>{slot.label}</span>
+                            {regularEveningTimings.map((slot, index) => (
+                                <div className="slot" key={`${slot.value}-${index}`}>
+                                    <span>{`Batch ${index + 1}`}</span>
                                     <b>{slot.value}</b>
                                 </div>
                             ))}
@@ -42,9 +42,9 @@ export default function TimingsSection() {
                 <div className="female-timings-section">
                     <h3>🚺 Female Only Timings</h3>
                     <div className="slot-list">
-                        {femaleTimings.map((slot) => (
-                            <div className="slot female-slot" key={`${slot.label}-${slot.value}`}>
-                                <span>{slot.label}</span>
+                        {femaleTimings.map((slot, index) => (
+                            <div className="slot female-slot" key={`${slot.value}-${index}`}>
+                                <span>{`Batch ${index + 1}`}</span>
                                 <b>{slot.value}</b>
                             </div>
                         ))}
