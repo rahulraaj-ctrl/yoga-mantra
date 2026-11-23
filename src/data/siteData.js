@@ -7,7 +7,7 @@ import anita from "../assets/anita.jpeg"
 import shubham from "../assets/shubham_verma.jpeg"
 import advance from "../assets/advance.jpeg"
 import shaila from "../assets/shaila.jpeg"
-
+import yogaAthome from "../assets/yogaAthome.png"
 export const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'Programs', href: '#programs' },
@@ -79,7 +79,7 @@ export const programCards = [
 ]
 
 export const featuredProgram = {
-  image: 'https://placehold.co/500x300/2d5016/f4f1e8?text=Yoga+At+Your+Home',
+  image: yogaAthome,
   title: '🏠 Yoga At Your Home',
   price: 'Starting ₹4999/Month · Offline across Lucknow',
   feats: ['Trainer visits your home', 'Fully personalised routine', 'Flexible scheduling'],
@@ -165,9 +165,9 @@ export const specialCourses = [
 ]
 
 export const teamMembers = [
-  { name: 'Shaila Pant', role: "Women's Wellness Expert · Therapy Session", image: shaila },
+  { name: 'Shaila Pant', role: "Women's Wellness Expert · Therapy Session", image: anita },
   { name: 'Shubham Verma', role: 'Advance Asanas Expert · Sound Healer, Therapy', image: shubham },
-  { name: 'Anita Verma', role: "Women's Special Batches · Corporate Yoga Expert", image: anita },
+  { name: 'Anita Verma', role: "Women's Special Batches · Corporate Yoga Expert", image: shaila },
 ]
 
 export const faqs = [

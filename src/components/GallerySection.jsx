@@ -1,5 +1,5 @@
 import glp1 from "../assets/glimpes/glp1.jpeg"
-import glp2 from "../assets/glimpes/glp2.jpeg"
+import glp2 from "../assets/glimpes/glp2.jpg"
 import glp3 from "../assets/glimpes/glp3.jpeg"
 import glp4 from "../assets/glimpes/glp4.jpeg"
 import glp5 from "../assets/glimpes/glp5.jpeg"

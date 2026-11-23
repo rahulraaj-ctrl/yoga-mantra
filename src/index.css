@@ -196,13 +196,23 @@ header {
 .hero {
     padding: 60px 0 70px;
     background:
-        linear-gradient(105deg, rgba(247, 242, 231, 0.72) 0%, rgba(239, 231, 214, 0.56) 38%, rgba(18, 52, 32, 0.28) 100%),
+        linear-gradient(105deg, rgba(247, 242, 231, 0.95) 0%, rgba(239, 231, 214, 0.86) 34%, rgba(18, 52, 32, 0.48) 100%),
         url("./assets/hero.jpeg") center/cover no-repeat;
     position: relative;
     overflow: hidden;
 }
 
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(92deg, rgba(247, 242, 231, 0.5) 0%, rgba(247, 242, 231, 0.24) 42%, rgba(0, 0, 0, 0.1) 100%);
+    pointer-events: none;
+}
+
 .hero-grid {
+    position: relative;
+    z-index: 1;
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     gap: 48px;
@@ -213,19 +223,27 @@ header {
     font-size: clamp(2.1rem, 4.4vw, 3.4rem);
     line-height: 1.12;
     margin: 14px 0 18px;
+    color: #0f2a1b;
+    text-shadow: 0 2px 14px rgba(247, 242, 231, 0.85);
 }
 
 .hero h1 em {
     font-style: italic;
-    color: var(--forest);
+    color: #16522d;
     position: relative;
 }
 
 .hero .sub {
     font-size: 1.08rem;
-    color: #4a4a3d;
+    color: #1e2c22;
     max-width: 520px;
     margin-bottom: 28px;
+    text-shadow: 0 1px 10px rgba(247, 242, 231, 0.8);
+}
+
+.hero .eyebrow {
+    color: #a46300;
+    text-shadow: 0 1px 8px rgba(247, 242, 231, 0.8);
 }
 
 .hero-ctas {
@@ -238,8 +256,9 @@ header {
 .trust-line {
     font-family: 'Poppins', sans-serif;
     font-size: 0.85rem;
-    color: var(--forest-deep);
+    color: #102d1f;
     font-weight: 600;
+    text-shadow: 0 1px 8px rgba(247, 242, 231, 0.75);
 }
 
 .trust-line span {
@@ -309,42 +328,170 @@ header {
     letter-spacing: 2px;
 }
 
+#why {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 12% 20%, rgba(143, 191, 125, 0.2) 0%, transparent 34%),
+        radial-gradient(circle at 88% 8%, rgba(240, 165, 0, 0.17) 0%, transparent 32%),
+        linear-gradient(180deg, rgba(247, 242, 231, 0.96) 0%, rgba(239, 231, 214, 0.88) 100%);
+}
+
+#why::before,
+#why::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+#why::before {
+    width: 260px;
+    height: 260px;
+    left: -90px;
+    top: 40px;
+    background: radial-gradient(circle, rgba(31, 107, 58, 0.16) 0%, rgba(31, 107, 58, 0) 68%);
+}
+
+#why::after {
+    width: 340px;
+    height: 340px;
+    right: -110px;
+    bottom: -140px;
+    background: radial-gradient(circle, rgba(240, 165, 0, 0.16) 0%, rgba(240, 165, 0, 0) 70%);
+}
+
+#why .wrap {
+    position: relative;
+    z-index: 1;
+}
+
 .why-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    perspective: 1000px;
 }
 
 .why-card {
-    background: #fff;
-    border: 1px solid var(--line);
+    position: relative;
+    isolation: isolate;
+    background: linear-gradient(155deg, rgba(255, 255, 255, 0.96) 0%, rgba(247, 242, 231, 0.9) 100%);
+    border: 1px solid rgba(18, 52, 32, 0.12);
     border-radius: var(--radius);
-    padding: 26px 20px;
+    padding: 28px 22px 24px;
     text-align: center;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(18, 52, 32, 0.1);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+}
+
+.why-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(circle at top right, rgba(240, 165, 0, 0.22), transparent 52%);
+    opacity: 0.65;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.why-card::after {
+    content: '';
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 0;
+    height: 4px;
+    border-radius: 99px;
+    background: linear-gradient(90deg, var(--forest) 0%, var(--turmeric) 100%);
+    transform: scaleX(0.35);
+    transform-origin: center;
+    opacity: 0.55;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.why-card .ico,
+.why-card h3,
+.why-card p {
+    position: relative;
+    z-index: 1;
+}
+
+.why-card .ico::after {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    border: 1px dashed rgba(31, 107, 58, 0.28);
+    opacity: 0;
+    transform: scale(0.9);
+    transition: transform 0.35s ease, opacity 0.35s ease;
 }
 
 .why-card:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow);
+    transform: translateY(-10px) rotateX(2deg);
+    box-shadow: 0 18px 36px rgba(18, 52, 32, 0.2);
     border-color: var(--turmeric);
+    background: linear-gradient(155deg, rgba(255, 255, 255, 1) 0%, rgba(241, 232, 213, 0.98) 100%);
+}
+
+.why-card:hover::before {
+    opacity: 1;
+}
+
+.why-card:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.why-card:hover .ico {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(18, 52, 32, 0.15);
+}
+
+.why-card:hover .ico::after {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .why-card .ico {
+    position: relative;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
     font-size: 2rem;
-    margin-bottom: 10px;
+    background: linear-gradient(145deg, rgba(31, 107, 58, 0.15), rgba(143, 191, 125, 0.26));
+    border: 1px solid rgba(31, 107, 58, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .why-card h3 {
     font-size: 1.12rem;
     font-family: 'Poppins', sans-serif;
     color: var(--forest-deep);
+    margin-bottom: 6px;
 }
 
 .why-card p {
     font-size: 0.95rem;
-    color: #5c5c4e;
+    color: #4f5548;
     margin-top: 6px;
+}
+
+.why-card:nth-child(2n) .ico {
+    background: linear-gradient(145deg, rgba(240, 165, 0, 0.2), rgba(198, 124, 0, 0.16));
+    border-color: rgba(198, 124, 0, 0.25);
+}
+
+.why-card:nth-child(3n) .ico {
+    background: linear-gradient(145deg, rgba(18, 52, 32, 0.2), rgba(143, 191, 125, 0.2));
+    border-color: rgba(18, 52, 32, 0.25);
 }
 
 .programs-bg {
