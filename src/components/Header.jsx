@@ -1,11 +1,12 @@
 import { navItems } from '../data/siteData'
+import logo from "../assets/logo.jpeg"
 
 export default function Header({ menuOpen, onToggleMenu, onCloseMenu }) {
     return (
         <header>
             <div className="nav wrap">
                 <a href="#home" className="brand" aria-label="Yoga Mantra home">
-                    <img src="https://yogamantraofficial.netlify.app/images/logo.jpeg" alt="Yoga Mantra logo" />
+                    <img src={logo} alt="Yoga Mantra logo" />
                     Yoga Mantra
                 </a>
 

@@ -156,12 +156,12 @@ header {
     font-family: 'Fraunces', serif;
     font-weight: 600;
     font-size: 1.15rem;
-    color: var(--forest-deep);
+    color: var(--forest-deep);   
 }
 
 .brand img {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
 }

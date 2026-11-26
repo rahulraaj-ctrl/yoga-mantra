@@ -3,11 +3,11 @@ import ryt from "../assets/ryt.jpeg"
 import kids from "../assets/kids.jpg"
 import bhagwat from "../assets/bhagwat_geeta.jpg"
 import face from "../assets/face.jpeg"
-import anita from "../assets/anita.jpeg"
+import anita from "../assets/anita.png"
 import shubham from "../assets/shubham_verma.jpeg"
 import advance from "../assets/advance.jpeg"
 import shaila from "../assets/shaila.jpeg"
-import yogaAthome from "../assets/yogaAthome.png"
+import yogaAthome from "../assets/yogaAthome.jpeg"
 export const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'Programs', href: '#programs' },
@@ -166,9 +166,9 @@ export const specialCourses = [
 ]
 
 export const teamMembers = [
-  { name: 'Shaila Pant', role: "Women's Wellness Expert · Therapy Session", image: anita },
+  { name: 'Shaila Pant', role: "Women's Wellness Expert · Therapy Session", image: shaila },
   { name: 'Shubham Verma', role: 'Advance Asanas Expert · Sound Healer, Therapy', image: shubham },
-  { name: 'Anita Verma', role: "Women's Special Batches · Corporate Yoga Expert", image: shaila },
+  { name: 'Anita Verma', role: "Women's Special Batches · Corporate Yoga Expert", image: anita },
 ]
 
 export const faqs = [
